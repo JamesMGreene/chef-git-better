@@ -3,6 +3,9 @@
 This file is used to list changes made in each version of the `git_better` cookbook.
 
 
+## `1.0.1`
+- Copy-and-paste for glory!
+
 ## `1.0.0`
 - Initial release of the `git_better` cookbook!
 
