@@ -3,6 +3,9 @@
 This file is used to list changes made in each version of the `git_better` cookbook.
 
 
+## `1.0.2`
+- Refactored to LWRP within `libraries` sub-directory.
+
 ## `1.0.1`
 - Copy-and-paste for glory!
 
