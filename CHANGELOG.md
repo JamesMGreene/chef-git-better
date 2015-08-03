@@ -3,6 +3,9 @@
 This file is used to list changes made in each version of the `git_better` cookbook.
 
 
+## `1.0.3`
+- Removed faulty use of `use_inline_resources` method, which is only available if inherting from the `Chef::Provider::LWRPBase` core class.
+
 ## `1.0.2`
 - Refactored to LWRP within `libraries` sub-directory.
 

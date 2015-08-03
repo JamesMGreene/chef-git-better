@@ -32,7 +32,9 @@ class Chef
 
       # Create a run_context for provider instances. Each provider action
       # becomes an isolated recipe with its own compile/converge cycle.
-      use_inline_resources
+      # NOTE: This can only be included if the class is inheriting from the
+      # `Chef::Provider::LWRPBase` class!
+      #use_inline_resources
 
       # Because we're using convergent Chef resources to manage machine state,
       # we can say why_run is supported for the composite.
