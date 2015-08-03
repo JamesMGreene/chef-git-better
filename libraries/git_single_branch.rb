@@ -75,6 +75,15 @@ class Chef
         end
       end
 
+
+      #
+      # Taken from:
+      #   https://github.com/chef/chef/blob/12.0.0/lib/chef/provider/git.rb#L107-L109
+      #
+      def git_minor_version
+        @git_minor_version ||= Gem::Version.new(shell_out!('git --version', run_options).stdout.split.last)
+      end
+
     end
   end
 end
